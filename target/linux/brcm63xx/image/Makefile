@@ -289,6 +289,9 @@ define Image/Build
 	# Netgear CVG834G
 	$(call Image/Build/HCS,$(1),cvg834g,a020,0001,0022,$(KDIR)/vmlinux)
 
+	# Zyxel P870HW-51Av2
+	$(call Image/Build/CFE,$(1),96368VVW,6368,P870HW-51Av2)
+
   ifeq ($(CONFIG_TARGET_ROOTFS_INITRAMFS),y)
 	$(call Image/Build/Initramfs)
   endif
